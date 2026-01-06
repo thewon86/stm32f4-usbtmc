@@ -194,6 +194,15 @@ typedef struct
   uint8_t Constant;
 } usbtmc_read_status_byte_rsp_t;
 
+typedef struct
+{
+  struct {
+      uint8_t bTag : 7;
+      uint8_t D7   : 1;
+  } bNotify1;
+  uint8_t bNotify2;
+} usbtmc_read_stb_rsp_t;
+
 #ifdef    __cplusplus
 }
 #endif

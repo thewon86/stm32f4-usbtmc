@@ -148,7 +148,9 @@ uint8_t USBD_TMC_SetRxBuffer(USBD_HandleTypeDef *pdev, uint8_t *pbuff);
 uint8_t USBD_TMC_ReceivePacket(USBD_HandleTypeDef *pdev);
 uint8_t USBD_TMC_TransmitPacket(USBD_HandleTypeDef *pdev);
 uint8_t USBD_TMC_TransmitZLP(USBD_HandleTypeDef *pdev);
+uint8_t USBD_TMC_INT_Transmit(USBD_HandleTypeDef *pdev, uint8_t *buffer, int len);
 USBD_StatusTypeDef USBD_TMC_StallEP(USBD_HandleTypeDef *pdev, uint8_t ep_addr);
+USBD_StatusTypeDef USBD_TMC_ClearStallEP(USBD_HandleTypeDef *pdev, uint8_t ep_addr);
 /**
   * @}
   */

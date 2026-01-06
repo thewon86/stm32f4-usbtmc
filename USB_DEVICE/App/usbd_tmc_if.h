@@ -101,8 +101,8 @@ typedef struct
     uint8_t  DEV_DEP_MSG_IN_bmTransferAttributes;
     uint32_t DEV_DEP_MSG_IN_CountTransfered;
 
-    uint32_t data_remaining_size;
-    uint32_t data_transfer_idx;
+    int32_t data_remaining_size;
+    int32_t data_transfer_idx;
 }usbtmc_context_type_t;
 
 /* USER CODE END EXPORTED_DEFINES */
