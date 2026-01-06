@@ -8,8 +8,8 @@
 - [x] 基本的数据收发。
 - [x] 大数据量请求，超过 MSP，甚至超过主机单次请求缓存容量；即支持 multiple transfers。
 - [x] 支持二进制数据请求。
-- [ ] 可以支持 TermChar
-- [ ] 可以支持 USB488 Trigger
+- [x] 可以支持 TermChar
+- [x] 可以支持 USB488 Trigger
 
 USBTMC bRequest 支持
 
@@ -30,7 +30,7 @@ USBTMC bRequest 支持
 - [ ] SR1 capable。
 - [ ] RL1 capable。
 - [ ] DT1 capable。
-- [ ] READ_STATUS_BYTE
+- [x] READ_STATUS_BYTE
 - [ ] REN_CONTROL
 - [ ] GO_TO_LOCAL
 - [ ] LOCAL_LOCKOUT
