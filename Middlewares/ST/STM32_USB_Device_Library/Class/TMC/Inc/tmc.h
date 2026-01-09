@@ -20,6 +20,10 @@ extern "C" {
 #define USBTMC_VERSION      0x0100
 #define USB488_VERSION      0x0100
 
+#define USBTMC_SUPPORT_488
+//#define USBTMC_SUPPORT_TERMCHAR
+//#define USB488_SUPPORT_TRIGGER
+
     /* Table 43: TMC Class Code */
     /*
      * Application-Class” class code, assigned by USB-IF. The Host must 
@@ -155,12 +159,16 @@ struct  __attribute__ ((packed))  usbtmc_capabilities {
     uint8_t bmIfCapabilities;  /* bitmap! */
     uint8_t bmDevCapabilities;  /* bitmap! */
     uint8_t reserved2[6];
+#ifdef USBTMC_SUPPORT_488
     /* USB488 */
     /* Table 8 -- GET_CAPABILITIES response packet */
     uint16_t bcdUSB488;
     uint8_t bmIfCapabilities488;  /* bitmap! */
     uint8_t bmDevCapabilities488;  /* bitmap! */
     uint8_t reserved3[8];
+#else
+    uint8_t reserved3[12];
+#endif
 };
 
 // Used for check clear status

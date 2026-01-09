@@ -58,9 +58,6 @@
 #define RINGBUF_SIZE        1024
 
 
-//#define USBTMC_SUPPORT_TERMCHAR
-//#define USB488_SUPPORT_TRIGGER
-
 // USBTMC 消息处理状态
 typedef enum
 {
