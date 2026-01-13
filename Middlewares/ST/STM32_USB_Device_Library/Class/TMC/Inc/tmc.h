@@ -23,6 +23,8 @@ extern "C" {
 #define USBTMC_SUPPORT_488
 //#define USBTMC_SUPPORT_TERMCHAR
 //#define USB488_SUPPORT_TRIGGER
+//#define USB488_SUPPORT_REN
+
 
     /* Table 43: TMC Class Code */
     /*
